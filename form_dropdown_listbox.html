@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Fakultas</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      margin: 40px;
+    }
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+    form {
+      background-color: white;
+      width: 300px;
+      margin: 0 auto;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    label {
+      font-weight: bold;
+    }
+    select {
+      width: 100%;
+      padding: 5px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+    }
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px;
+      width: 100%;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h2>Form Pilihan Fakultas</h2>
+
+  <form>
+    <label for="fakultas">Pilih Fakultas:</label><br>
+    <select id="fakultas" name="fakultas">
+      <option value="ft">Fakultas Teknik</option>
+      <option value="fmipa">Fakultas MIPA</option>
+      <option value="feb">Fakultas Ekonomi dan Bisnis</option>
+      <option value="fisip">Fakultas Ilmu Sosial dan Politik</option>
+      <option value="fkip">Fakultas Keguruan dan Ilmu Pendidikan</option>
+    </select>
+
+    <label for="jurusan">Pilih Jurusan (bisa lebih dari satu):</label><br>
+    <select id="jurusan" name="jurusan" multiple size="5">
+      <option value="ti">Teknik Informatika</option>
+      <option value="si">Sistem Informasi</option>
+      <option value="mtk">Matematika</option>
+      <option value="ekonomi">Ekonomi</option>
+      <option value="pendidikan">Pendidikan</option>
+    </select>
+
+    <input type="submit" value="Kirim">
+  </form>
+</body>
+</html>
